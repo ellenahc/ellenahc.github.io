@@ -1,7 +1,65 @@
 <!DOCTYPE html>
     <html>
+        <head>
+             <!-- Page setup -->
+            <meta charset="utf-8">
+            <title>Chanelle's GitHub Profile</title>
+            <meta name="description" content="A brief description of your site for search engines">
+            <meta name="author" content="Information about the author here">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+            <link rel="icon" type="image/png" href="favicon.png">
+        
+            <!-- Stylesheets -->
+            <!-- Reset default styles and add support for google fonts -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+            <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        
+            <!-- Custom styles -->
+            <link href="style.css" rel="stylesheet" type="text/css" />
+
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+        </head>
         <body>
-            <h1>Welcome to my currently empty Page!</h1>
-            <p>This is being hosted with GitHub Pages (got to give them credit, right?)</p>
+            <header id="header">
+                <img id="head-pic" src="https://avatars.githubusercontent.com/u/61313722?v=4" >
+                <h1>Chanelle's Website</h1>
+
+                <ul class="main-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+
+            <div id="container">
+                <div class="inner">
+                    <div id="content">
+                        
+                        <div id="home" class="content-region hide">
+                            <h2>Home</h2>
+                            <p>This is the intro to my page. Empty at the moment.</p>
+                        </div>
+                        
+                        <div id="portfolio" class="content-region hide">
+                            <h2>Portfolio</h2>
+                            <p>This is the Portfolio section</p>
+                        </div>
+                        
+                        <div id="contact" class="content-region hide">
+                            <h2>Contact</h2>
+                            <p>This is the Contact section</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Work in progress</p>
+            </footer>
+
+            <!-- Load additional JS scripts here -->
+            <script type="text/javascript" src="script.js"></script>
         </body>
     </html>
