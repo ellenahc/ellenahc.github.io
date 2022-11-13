@@ -6,9 +6,8 @@
 *
 ***************************************************************/
 
-/* don't mind this */
-
-.uhoh
+/* For hotfixes */
+#hotfix h3
 {
     color: red;
     padding: 0px;
@@ -16,14 +15,14 @@
     font-size: 22px;
 }
 
-.p-uhoh
+#hotfix p
 {
     color: orange;
     padding-bottom: 40px;
     margin: 0px;
 }
 
-/* Text and Fonts */
+/* Body */
 html 
 {
     font-size: 62.5%;
@@ -37,6 +36,27 @@ body
     font-weight: 400;
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
+
+    min-width: 400px;
+    margin: 0px auto;
+}
+
+html, .container, .inner {background-color: transparent;}
+
+.container
+{
+    max-width: 1500px;
+    margin: 0px auto;
+    border-style: none groove none groove;
+    border-color:#095f3e;
+    border-width: 5px;
+}
+
+header, footer, .container
+{ 
+    background: rgba(0,0,0,0.8); 
+    padding:25px;
+    color:#FFFFFF; 
 }
 
 /* Links */
@@ -61,8 +81,7 @@ small
 /* Headings */
 h1, h2, h3, h4, h5, h6 
 {
-    line-height: 1;
-   
+    line-height: 1;  
     margin-top: 0;
     margin-bottom: 2rem;
     font-weight: 300;
@@ -71,9 +90,9 @@ h1, h2, h3, h4, h5, h6
 h1 { font-size: 3.6rem; }
 h2 { font-size: 3.0rem; padding-top: 12px; color:#00beff}
 h3 { font-size: 2.2rem; color: #2e82ff} 
-h4 { font-size: 1.8rem; }
+h4 { font-size: 1.8rem; color:#0095ff}
 h5 { font-size: 1.5rem; }
-h6 { font-size: 1.2rem; color:#6e6e6e; padding: 20px 0px 10px 0px; text-align: right}
+h6 { font-size: 1.2rem; color:#6e6e6e;}
 
 /* Paragraphs */
 p 
@@ -105,7 +124,7 @@ blockquote
     font-size:1.8rem;
 }
 
-/* Utility Classes */
+/* Utility Classes (currently not in use)*/
 .hide 
 {
     display:none;
@@ -132,26 +151,22 @@ blockquote
 }
 
 /* Scrollbar */
-/* Width */
-::-webkit-scrollbar 
+::-webkit-scrollbar /* Width */
 {
     width: 14px;
 }
 
-/* Track */
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track /* Track */
 {
     background: #696969; 
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb /* Handle */ 
 {
     background: rgb(83, 65, 151); 
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover 
+::-webkit-scrollbar-thumb:hover /* Handle on hover */
 {
     background: rgb(46, 2, 150); 
 }
@@ -203,6 +218,7 @@ blockquote
 
 }
 
+/* Sections */
 .section
 {
     border-style: none none ridge none;
@@ -222,74 +238,18 @@ blockquote
     border-width: 0px;
 }
 
-/*****************************************************************
-* Layout Section
-*
-* This document contains specific adjustments made to the
-* page, based on order of appearance.
-*****************************************************************/
-
-/* Body */
-
-html, .container, .inner {background-color: transparent;}
-
-body 
+/* Content */
+.content
 {
-    min-width: 400px;
-    margin: 0px auto;    
-}
-
-.body-adjustment
-{
-    min-height: 550px;
-}
-
-.container
-{
-    max-width: 1500px;
+    max-width: 1100px;
     margin: 0px auto;
-    border-style: none groove none groove;
-    border-color:#095f3e;
-    border-width: 5px;
+    padding: auto 25px;
 }
-
-header, footer, .container, #myCarousel
-{ 
-    background: rgba(0,0,0,0.8); 
-    padding:25px;
-    color:#FFFFFF; 
-}
-
-/* Header */
-#header
+  
+.last-paragraph
 {
-    /* need to make it stick to the top */
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#head-space
-{
-    display:inline-block;
-    width: 12%;
-    min-width: 60px;
-}
-
-#head-icon
-{
-    float: right;
-    max-width: 60px;
-    max-height:fit-content;
-    margin: 10px;
-}
-
-#head-title
-{
-    display:inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-    width: 49%;
+    padding-top: 60px;
+    color:#00ff22
 }
 
 /* Menu Links */
@@ -322,12 +282,35 @@ ul.main-menu li a.active
     border-bottom-color:#27c3df;
 }
 
-/* Content */
-.content
+/* Header */
+#header
 {
-    max-width: 1100px;
-    margin: 0px auto;
-    padding: auto 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#head-img
+{
+    display:inline-block;
+    width: 12%;
+    min-width: 60px;
+}
+
+#head-img img
+{
+    float: right;
+    max-width: 60px;
+    max-height:fit-content;
+    margin: 10px;
+}
+
+#head-title
+{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 49%;
 }
   
 /* Footer */
@@ -338,7 +321,7 @@ ul.main-menu li a.active
     right: 0;
 }
 
-#footer-icon
+#footer img
 {
     max-height: 30px;
     max-width: fit-content;
@@ -370,7 +353,7 @@ ul.footer-nav-list li a
 }
 ul.footer-nav-list li a:hover 
 {
-    color:#00f7ff;
+    color:#00ff22;
 }
 
 .footer-nav-item
@@ -386,10 +369,16 @@ ul.footer-nav-list li a:hover
     font-size:smaller;
     white-space: nowrap
 }
-  
-.last-paragraph
+
+/* Feedback Form */
+#feedback a
 {
-    padding-top: 60px;
-    color:#00ff22
+    font-size: 20px;
+    border-bottom: solid transparent 3px;
+    color:#008d5e;
 }
-  
+
+#feedback a:hover
+{
+    color:#00ff22;
+}
