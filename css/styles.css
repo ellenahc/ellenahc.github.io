@@ -1,0 +1,395 @@
+/***************************************************************
+* Style
+* 
+* This document focuses on the font styles in the site
+* as well as common functions/styles
+*
+***************************************************************/
+
+/* don't mind this */
+
+.uhoh
+{
+    color: red;
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+.p-uhoh
+{
+    color: orange;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+
+/* Text and Fonts */
+html 
+{
+    font-size: 62.5%;
+}
+
+body 
+{
+    background-color: #190844;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+/* Links */
+a 
+{
+    font-weight: normal;
+    text-decoration: none; 
+    color:#19bcc2;
+}
+
+a:focus 
+{
+    outline:thin outset;
+    outline-color: #5e27df;
+}
+
+small 
+{
+    font-size: 75%;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 
+{
+    line-height: 1;
+   
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+h1 { font-size: 3.6rem; }
+h2 { font-size: 3.0rem; padding-top: 12px; color:#00beff}
+h3 { font-size: 2.2rem; color: #2e82ff} 
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.2rem; color:#6e6e6e; padding: 20px 0px 10px 0px; text-align: right}
+
+/* Paragraphs */
+p 
+{
+    margin: -0.8em auto 1.5em auto;
+}
+
+/* Quotes & Blockquotes */
+q 
+{
+    quotes: '\00201C' '\00201D';
+}
+
+q:before 
+{
+    content: open-quote;
+}
+
+q:after 
+{
+    content: close-quote;
+}
+
+blockquote 
+{
+    border-left: 2px solid #222222;
+    margin: 1.6em 10%;
+    padding: .75em 1em;
+    font-size:1.8rem;
+}
+
+/* Utility Classes */
+.hide 
+{
+    display:none;
+}
+
+.show 
+{
+    display:block;
+}
+
+/* Borders */
+.border-line-bottom
+{
+    border-style: none none ridge none;
+    border-color:#7727df;
+    border-width: 1px;
+}
+
+.border-line-top
+{
+    border-style: ridge none none none;
+    border-color:#7727df;
+    border-width: 1px;
+}
+
+/* Scrollbar */
+/* Width */
+::-webkit-scrollbar 
+{
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+    background: #696969; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: rgb(83, 65, 151); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(46, 2, 150); 
+}
+
+/* Sidepanel */
+.sidepanel
+{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 300px;
+    top: 53px;
+    right: 25px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.sidepanel a
+{
+    padding: 0px 8px 8px 14px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #a7afb8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover
+{
+    color: #00ff22;
+}
+
+#nav-btn
+{
+    margin-right:20px;
+    padding: 5px 20px 10px 20px;
+    font-size:2.0rem;
+    border: solid transparent 3px;
+    background-color: transparent;
+    color: #f1f1f1;
+}
+
+#nav-btn:hover
+{
+    background-color:#0055ff;
+
+}
+
+.section
+{
+    border-style: none none ridge none;
+    border-color:#7727df;
+    border-width: 1px;
+    padding: 40px;
+}
+
+.first-section
+{
+    padding-top: 10px;
+}
+
+.last-section
+{
+    padding-bottom: 40px;
+    border-width: 0px;
+}
+
+/*****************************************************************
+* Layout Section
+*
+* This document contains specific adjustments made to the
+* page, based on order of appearance.
+*****************************************************************/
+
+/* Body */
+
+html, .container, .inner {background-color: transparent;}
+
+body 
+{
+    min-width: 400px;
+    margin: 0px auto;    
+}
+
+.body-adjustment
+{
+    min-height: 550px;
+}
+
+.container
+{
+    max-width: 1500px;
+    margin: 0px auto;
+    border-style: none groove none groove;
+    border-color:#095f3e;
+    border-width: 5px;
+}
+
+header, footer, .container, #myCarousel
+{ 
+    background: rgba(0,0,0,0.8); 
+    padding:25px;
+    color:#FFFFFF; 
+}
+
+/* Header */
+#header
+{
+    /* need to make it stick to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#head-space
+{
+    display:inline-block;
+    width: 12%;
+    min-width: 60px;
+}
+
+#head-icon
+{
+    float: right;
+    max-width: 60px;
+    max-height:fit-content;
+    margin: 10px;
+}
+
+#head-title
+{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 49%;
+}
+
+/* Menu Links */
+ul.main-menu 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px 0px 5px 0px;
+    list-style: none;
+}
+
+ul.main-menu li a 
+{
+    margin-right:20px;
+    padding: 2px 5px;
+    font-size:2.0rem;
+    border-bottom: solid transparent 3px;
+    color:#cfd2da;
+}
+
+ul.main-menu li a:hover 
+{
+    color:#FFFFFF;
+}
+
+ul.main-menu li a.active 
+{
+    color:#FFFFFF;
+    border-bottom-color:#27c3df;
+}
+
+/* Content */
+.content
+{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: auto 25px;
+}
+  
+/* Footer */
+#footer
+{
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer-icon
+{
+    max-height: 30px;
+    max-width: fit-content;
+}
+  
+#footer-nav
+{
+    color:#a7afb8;
+    margin: 0 auto;
+    padding-top: 1.3em;
+    padding-bottom: 1.1em;
+    text-align: center;
+}
+
+ul.footer-nav-list
+{
+    white-space: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+
+ul.footer-nav-list li a 
+{
+    margin-right:20px;
+    padding: 2px 5px;
+    font-size:1.8rem;
+    border-bottom: solid transparent 3px;
+    color:#008d5e;
+}
+ul.footer-nav-list li a:hover 
+{
+    color:#00f7ff;
+}
+
+.footer-nav-item
+{
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+    position: relative
+}
+
+.copyright
+{
+    font-size:smaller;
+    white-space: nowrap
+}
+  
+.last-paragraph
+{
+    padding-top: 60px;
+    color:#00ff22
+}
+  

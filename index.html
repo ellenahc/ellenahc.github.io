@@ -1,70 +1,187 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-             <!-- Page setup -->
-            <meta charset="utf-8">
-            <title>Chanelle's Portfolio</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
-            
-            <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/61313722?v=4">
+<html>
+    <head>
+        <!-- Page Setup -->
+        <meta charset="utf-8">
+        <title>Chanelle's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
         
-            <!-- Stylesheets -->
-            <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>  
-            <link href="style.css" rel="stylesheet" type="text/css"/>
+        <!-- Tab Icon -->
+        <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/61313722?v=4">
+    
+        <!-- Font -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/> 
+        
+        <!-- Stylesheets -->
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        
 
-            <!-- jQuery -->
-            <script src="jquery.js"></script>
-        </head>
+        <!-- JavasSripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>      
+  
+    </head>
 
-        <body>
-            <header id="header">
-                <div id="header-profile">
-                    <img id="head-pic" src="https://avatars.githubusercontent.com/u/61313722?v=4">
-                    <h1>Chanelle's Portfolio</h1>
+    <body>
+        
+
+        <!-- Header -->
+        <header id="header">
+            <ul class="main-menu">
+                <li><button id="nav-btn" onclick="changeNav()">☰ Navigation</button></li>
+            </ul>
+            <div id="header-profile" class="border-line-bottom">
+                <div id="head-space">
+                    <img id="head-icon" src="https://avatars.githubusercontent.com/u/61313722?v=4">
                 </div>
-
-                <ul class="main-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#learning-outcomes">Learning Outcomes</a></li>
-                    <li><a href="#research">Research</a></li>
-                </ul>
-            </header>
-
-            <div id="container">
-                <div class="inner">
-                    <div id="content">
-                        
-                        <div id="about" class="content-region hide">
-                            <h2>About</h2>
-                            <p>This is the intro to my page. Empty at the moment.</p>                            
-                        </div>
-                        
-                        <div id="learning-outcomes" class="content-region hide">
-                            <h2>Learning Outcomes</h2>
-                            <p>This is the LO section</p>
-                        </div>
-                        
-                        <div id="research" class="content-region hide">
-                            <h2>Research Papers</h2>
-                            <p>This is the Research Papers section</p>
-                        </div>
-                    </div>
+                <div id="head-title">
+                    <h1>Chanelle's Portfolio</h1>
                 </div>
             </div>
 
-            <footer id="footer">
-                <nav id="footer-nav">
-                    <img id="footer-icon" src="https://avatars.githubusercontent.com/u/61313722?v=4"></img>
-                    <ul id="footer-nav-list">
-                        <li class="footer-nav-item"><a href="https://github.com/ellenahc">GitHub</a></li>
-                        <li class="footer-nav-item"><a href="https://nl.linkedin.com/in/chanelle-hart-599ab2153">LinkedIn</a></li>
-                        <li class="footer-nav-item"><a href="https://www.instagram.com/ellenamajin/?hl=en">Instagram</a></li>
-                    </ul>
-                    <p class="copyright">© 2022 Ellenahc (me). All rights reserved.</p>
-                </nav>
-            </footer>
+            <div class="border-line-bottom">
+                <!-- Sidepanel -->
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="#lo1">1. User-Friendly Software</a>
+                    <a href="#lo2">2. Software Quality</a>
+                    <a href="#lo3">3. Software Agility</a>
+                    <a href="#lo4">4. Design and Implementation</a>
+                    <a href="#lo5">5. Culture and Ethics</a>
+                    <a href="#lo6">6. Testing Techniques</a>
+                    <a href="#lo7">7. Business Process Analysis</a>
+                    <a href="#lo8">8. Professionalism</a>
+                    <a href="#research">Research</a>
+                    <a href="#">Back to top</a>
+                </div>
+                
+            </div>
+            
+        </header>        
 
-            <!-- Load additional JS scripts here -->
-            <script type="text/javascript" src="script.js"></script>
-        </body>
-    </html>
+
+        <!-- Content 
+        ====================================================================-->
+        <div class="container body-adjustment">
+            <div class="content">
+                
+                <div id="overview" class="section first-section">
+                    <p class="uhoh">Uh Oh!</p>
+                    <p class="p-uhoh">If you're seeing this, that means I accidentally
+                        uploaded it to the main branch. It's currently incomplete.
+                        <br>Hoo boy! Quite embarassing.
+                    </p>
+
+                    <h2>Overview</h2>
+                    <p>In this portfolio, I will go through the learning outcomes I have 
+                        achieved thus far for the current semester. I am currently studying 
+                        Software Engineering at Fontys Hogeschool ICT. I am in semester 3. 
+                        This portfolio, like any other, will be updated periodically.</p> 
+                    <h3>Learning Outcomes</h3>
+                    <p>Each learning outcome (LO) is described below and is accompanied by 
+                        the work I have done thus far.</p>  
+                    <h6>Last Updated: 13/11/2022
+                        <br> Version 1.0</h6>
+                    
+                </div>
+                
+                <div id="lo1" class="section">
+                    <h2>LO1: User-Friendly Software</h2>
+                    <p>For this LO, I must show how dummy-proof my application is, 
+                        along with the techniques I used to make it so. Of course, 
+                        I must also display skills in front and back end development, 
+                        such as Javascript and ORM.</p>
+                </div>
+
+                <div id="lo2" class="section">
+                    <h2>LO2: Software Quality</h2>
+                    <p>I must show that I am capable of using software tools and methods that 
+                        allows me to continously monitor and improve the software quality of the 
+                        app during the software development stage.</p>
+                </div>
+
+                <div id="lo3" class="section">
+                    <h2>L03: Software Agility</h2>
+                    <p>For this LO, I must choose and implement the most suitable agile 
+                        software development method for my software project.</p>
+                </div>
+
+                <div id="lo4" class="section">
+                    <h2>LO4: Design and Implementation</h2>
+                    <p> I must design and implement a (semi)automated software release process
+                        that matches the needs of the project context.
+                    </p>
+                </div>
+
+                <div id="lo5" class="section">
+                    <h2>LO5: Culture and Ethics</h2>
+                    <p>I must recognize and take into account cultural differences between
+                        project stakeholders and ethical aspects in software development.</p>
+                </div>
+
+                <div id="lo6" class="section">
+                    <h2>LO6: Testing Techniques</h2>
+                    <p>I must analyze (non-functional) requirements, elaborate architectural
+                        designs and validate them using multiple types of test techniques.
+                    </p>
+                </div>
+
+                <div id="lo7" class="section">
+                    <h2>LO7: Business Process Analysis</h2>
+                    <p>I must analyze and describe simple business processes that are related
+                        to my project.</p>
+                </div>
+
+                <div id="lo8" class="section">
+                    <h2>LO8: Professionalism</h2>
+                    <p>Speaks for itself (oops!): I must act in a professional manner.</p>
+                </div>
+                
+                <div id="research" class="section">
+                    <h2>Research Papers</h2>
+                    <p>This is where I will put all my research that would be related
+                        to my learning outcomes (hyperlinks of course).
+                    </p>
+                </div>
+
+                <div id="feedback" class="section last-section">
+                    <h2>Feedback</h2>
+                    <p>This section will include feedback that may not necessarily
+                        correspond to the above learning outcomes, but mainly for
+                        reference of achievements and improvements.
+                    </p>
+                    <p class="last-paragraph">
+                        Thank you for reaching this point! Hope you enjoyed reading
+                        as much as I enjoyed creating this.
+                    </p>
+                </div>
+            </div>
+        </div> <!-- end of Content -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <nav id="footer-nav" class="border-line-top">
+                <img id="footer-icon" src="https://avatars.githubusercontent.com/u/61313722?v=4"></img>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="https://github.com/ellenahc">GitHub</a></li>
+                    <li class="footer-nav-item"><a href="https://nl.linkedin.com/in/chanelle-hart-599ab2153">LinkedIn</a></li>
+                    <li class="footer-nav-item"><a href="https://www.instagram.com/ellenamajin/?hl=en">Instagram</a></li>
+                </ul>
+                <p class="copyright">© 2022 Ellenahc (me). All rights reserved.</p>
+            </nav>
+        </footer>
+
+        <!-- Load additional JS scripts here -->
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script>              
+        var flag = true;
+        function changeNav(){          
+            let el = document.getElementById("mySidepanel");
+            el.style.width = flag? "250px" : "0";
+
+            flag = !flag;
+        }
+        </script>
+    </body>
+</html>
