@@ -7,9 +7,14 @@
 ***************************************************************/
 
 /* For hotfixes */
+#hotfix
+{
+    text-align: center;
+}
+
 #hotfix h3
 {
-    color: red;
+    color: rgb(122, 216, 208);
     padding: 0px;
     margin: 0px;
     font-size: 22px;
@@ -17,7 +22,7 @@
 
 #hotfix p
 {
-    color: orange;
+    color: rgb(143, 177, 192);
     padding-bottom: 40px;
     margin: 0px;
 }
@@ -30,25 +35,34 @@ html
 
 body 
 {
-    background-color: #190844;
     font-size: 1.5em;
     line-height: 1.6;
     font-weight: 400;
     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
 
+    
     min-width: 400px;
     margin: 0px auto;
 }
 
+/* background image */
 html, .container, .inner {background-color: transparent;}
+html
+{
+    background:url(background.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
 
+
+
+/* Body css */
 .container
 {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0px auto;
-    border-style: none groove none groove;
-    border-color:#095f3e;
+    border-style: none ridge;
+    border-color:#2788b4;
     border-width: 5px;
 }
 
@@ -214,8 +228,7 @@ blockquote
 
 #nav-btn:hover
 {
-    background-color:#0055ff;
-
+    background-color:#6c53f8;
 }
 
 /* Sections */
@@ -234,7 +247,7 @@ blockquote
 
 .last-section
 {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     border-width: 0px;
 }
 
@@ -243,7 +256,8 @@ blockquote
 {
     max-width: 1100px;
     margin: 0px auto;
-    padding: auto 25px;
+    padding: 25px 20px;
+    background: rgba(0,0,0,0.7);
 }
   
 .last-paragraph
@@ -349,11 +363,11 @@ ul.footer-nav-list li a
     padding: 2px 5px;
     font-size:1.8rem;
     border-bottom: solid transparent 3px;
-    color:#008d5e;
+    color:#863fe2;
 }
 ul.footer-nav-list li a:hover 
 {
-    color:#00ff22;
+    color:#c87cfc;
 }
 
 .footer-nav-item
@@ -375,10 +389,17 @@ ul.footer-nav-list li a:hover
 {
     font-size: 20px;
     border-bottom: solid transparent 3px;
-    color:#008d5e;
+    color:#863fe2;
 }
 
 #feedback a:hover
 {
-    color:#00ff22;
+    color:#c87cfc;
 }
+
+#feedback-form
+{
+    padding-top: 30px;
+    text-align: center;
+}
+
