@@ -1,4 +1,4 @@
-# Chanelle's Portfolio
+# Ellenahc's GitHub.io
 
-Welcome to my portfolio! It is currently under construction.
+This is the start of my GitHub.io <br>
 [Here's the link!](https://ellenahc.github.io/)
